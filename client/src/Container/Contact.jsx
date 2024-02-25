@@ -1,10 +1,9 @@
 import React from "react";
-import { Header } from "../Components";
 
-export default function Main() {
+export default function Contact() {
   return (
     <main className="w-screen min-h-screen flex items-center justify-center flex-col bg-primary">
-      <Header />
+      xnweci
     </main>
   );
 }
