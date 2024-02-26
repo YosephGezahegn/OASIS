@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { Login, Main } from "./Container";
+import { Dashboard, Login, Main } from "./Container";
 import { app } from "./config/firebase.config";
 import { validateUserJWTToken } from "./api";
 import { useDispatch, useSelector } from "react-redux";
@@ -46,6 +46,7 @@ export default function App() {
       <Routes>
         <Route path="/*" element={<Main />} />
         <Route path="/Login" element={<Login />} />
+        <Route path="/dashboard/*" element={<Dashboard />} />
       </Routes>
       {alert?.type && <Alert type={alert?.type} message={alert?.message} />}
     </h1>

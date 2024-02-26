@@ -75,7 +75,7 @@ const Header = () => {
               className="relative cursor-pointer"
               onMouseEnter={() => setisMenu(true)}
             >
-              <div className="w-10 h-10 rounded-full shadow-md cursor-pointer overflow-hidden flex items-center justify-center">
+              <div className="w-10 h-10 mb-3 rounded-full shadow-md cursor-pointer overflow-hidden flex items-center justify-center">
                 <motion.img
                   className="w-full h-full object-cover"
                   src={user?.picture ? user?.picture : Avatar}
@@ -89,6 +89,12 @@ const Header = () => {
                   onMouseLeave={() => setisMenu(false)}
                   className="w-48 px-6 py-4 bg-gray-200 backdrop-blur-md shadow-md rounded-md absolute top-12 right-0 flex flex-col gap-4"
                 >
+                  <Link
+                    to={"/dashboard"}
+                    className="hover:text-blue-500 text-sm"
+                  >
+                    Dashboard
+                  </Link>
                   <Link to={"#"} className="hover:text-blue-500 text-sm">
                     My Profile
                   </Link>
