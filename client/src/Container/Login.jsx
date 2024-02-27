@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { background, grey, pizza } from "../Assets";
+import { background } from "../Assets";
 import Logininput from "../Components/Logininput";
 import { FaEnvelope, FaLock, FcGoogle } from "../Assets/icons";
 import { motion } from "framer-motion";

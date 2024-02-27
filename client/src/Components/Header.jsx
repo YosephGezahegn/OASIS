@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { buttonClick } from "../animations";
 import { MdLogout, MdShoppingCart } from "../Assets/icons";
 import { useDispatch, useSelector } from "react-redux";
-import { Avatar, Button } from "flowbite-react";
+import { Avatar } from "flowbite-react";
 
 import { app } from "../config/firebase.config";
 import { setUserNull } from "../context/actions/userActions";

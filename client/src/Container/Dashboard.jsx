@@ -1,11 +1,11 @@
 import React from "react";
-import { DBLeftSection, DBRightSection } from "../Components";
+import { DBLeftsection, DBrightSec } from "../Components";
 
 const Dashboard = () => {
   return (
     <div className="w-screen h-screen flex items-center">
-      <DBLeftSection />
-      <DBRightSection />
+      <DBLeftsection />
+      <DBrightSec />
     </div>
   );
 };
